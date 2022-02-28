@@ -72,7 +72,7 @@ def can_sum_dynamic(a: list, target: int, memo={}):
     if target < 0:
         return False
     if target in memo:
-        return True
+        return memo[target]
     i = 0
     result = []
     for element in a:
